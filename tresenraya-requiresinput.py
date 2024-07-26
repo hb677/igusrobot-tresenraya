@@ -1,7 +1,7 @@
 # Code for robot movements
 # 
 #
-
+   
 import socket
 import time
 def sendMessageToRobot(message):
