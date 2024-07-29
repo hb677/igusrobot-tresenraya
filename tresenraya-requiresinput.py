@@ -178,10 +178,9 @@ def isBoardFull(board):
 
 while True:
     # Initialise robot
-    sendMessageToRobot("CRISTART 1234 CMD Connect CRIEND")
-    sendMessageToRobot("CRISTART 1234 CMD Reset CRIEND")
-    sendMessageToRobot("CRISTART 1234 CMD Enable CRIEND")
-
+    sendMessageToRobot("Connect")
+    sendMessageToRobot("Reset")
+    sendMessageToRobot("Enable")
     # Reset the board
     theBoard = [' '] * 10
     piecesleft = 5
