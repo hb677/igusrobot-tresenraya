@@ -49,7 +49,7 @@ def is_empty(image):
             #circles usually take up an area of ~ 30-35%
             #crosses usually take up an area of ~ 20-25%
             #when empty... noise usually takes up an area of less than 1%
-            if cv.contourArea(i) / image_area > 0.15:
+            if cv.contourArea(i) / image_area > 0.08:
                 empty = False
     
     else:
@@ -61,7 +61,7 @@ def is_empty(image):
             #circles usually take up an area of ~ 30-35%
             #crosses usually take up an area of ~ 20-25%
             #when empty... noise usually takes up an area of less than 1%
-            if cv.contourArea(i) / image_area > 0.15:
+            if cv.contourArea(i) / image_area > 0.08:
                 empty = False
     
     return empty
