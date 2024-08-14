@@ -17,18 +17,12 @@ def pickup_and_place(sock, pieces_left, to):
     sendMessageToRobot(sock, 'StartProgram')
 
 def who_first():
-    needinput = True
-    
-    while needinput:
-        who = input('player(p) or computer(c) first?')
+    who = input('player(p) or computer(c) first?')
 
-        if who == 'P' or who =='p':
-            return 'player'
-        if who == 'C' or who =='c':
-            return 'computer'
-        else:
-            print('add either the letter (p) or the letter (c) and hit enter')
-    
+    if who == 'P' or who =='p':
+        return 'player'
+    if who == 'C' or who =='c':
+        return 'computer'
 
 #given a board and a letter, this function returns True if that letter(x for player, o for computer) has won.
 def is_winner(board_list, letter):
@@ -104,20 +98,8 @@ def get_computer_move(board_list):
     return 'no move'
 
 #initialise camera
-while True:
-    cam_port = input('which camera port are we using?')
-    if cam_port.isnumeric():
-        break
-    else:
-        print('input a number')
-while True:
-    camera_position = input('what position is the camera in (1-3)?')
-    if camera_position.isnumeric() != True:
-        print('input an integer between 1 and 3')
-    elif int(camera_position) in [1, 2, 3]:
-        break
-    else:
-        print('input an integer between 1 and 3')
+cam_port = input('which camera port are we using?')
+camera_position = input('what position is the camera in (1-3)?')
 print('initialising camera...')
 cam = cv.VideoCapture(cam_port)
 
