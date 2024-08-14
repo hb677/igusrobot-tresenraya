@@ -1,19 +1,17 @@
 import cv2 as cv
 import random
 from igus_robot import *
-import time
-import socket
 from board_analysis import check_player_move
 
-def pickup_and_place(sock, pieces_left, to):
+def pickup_and_place(pieces_left, to):
     file_number = to + 1
-    sendMessageToRobot(sock, 'LoadProgram pickup_' + str(pieces_left) + 'leftcorrect.xml')
+    sendMessageToRobot('LoadProgram pickup_' + str(pieces_left) + 'leftcorrect.xml')
     time.sleep(0.3)
-    sendMessageToRobot(sock, 'StartProgram')
+    sendMessageToRobot('StartProgram')
     time.sleep(3.8)
-    sendMessageToRobot(sock, 'LoadProgram place_to' + str(file_number) + 'correct.xml')
+    sendMessageToRobot('LoadProgram place_to' + str(file_number) + 'correct.xml')
     time.sleep(0.3)
-    sendMessageToRobot(sock, 'StartProgram')
+    sendMessageToRobot('StartProgram')
 
 def who_first():
     who = input('player(p) or computer(c) first?')
@@ -100,21 +98,13 @@ def get_computer_move(board_list):
 cam_port = input('which camera port are we using?')
 camera_position = input('what position is the camera in (1-3)?')
 print('initialising camera...')
+cam_port = 1
 cam = cv.VideoCapture(cam_port)
 
-#initialise ethernet connection
-sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-
-server_address = ('192.168.3.11', 3920)
-print("Connecting...")
-sock.connect(server_address)
-print("Connected")
-
 # Initialise robot
-sendMessageToRobot(sock,"Connect")
-sendMessageToRobot(sock, "Reset")
-sendMessageToRobot(sock, "Enable")
+sendMessageToRobot("Connect")
+sendMessageToRobot("Reset")
+sendMessageToRobot("Enable")
 
 while True:
 
@@ -153,7 +143,7 @@ while True:
 
                 else:
                     make_move(the_board, 'o', move)
-                    pickup_and_place(sock, pieces_left, move)
+                    pickup_and_place(pieces_left, move)
                     print('computer made move:')
                     print(the_board)
 
