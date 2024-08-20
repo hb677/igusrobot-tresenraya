@@ -43,7 +43,7 @@ def sendMessageToRobot(message):
         sock.sendall(arrayAliveJog)
         time.sleep(0.1)			
 
-def sendNoPrint():
+def alive():
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
@@ -60,14 +60,7 @@ def sendNoPrint():
     arrayAliveJog=bytearray(encodedAliveJog)
         
 
-    # Send first ALIVEJOG to establish the connection
+    # Send ALIVEJOG
     sock.sendall(arrayAliveJog)
-    time.sleep(0.1)
-
-    # I'm sending 10 more ALIVEJOG messages to keep the connection alive.
-    # If I drop the connection too early our message may not get through.
-    # A production program should send this once or twice a second from a parallel thread.
-    for i in range (1, 10):
-        sock.sendall(arrayAliveJog)
-        time.sleep(0.1)			
+    time.sleep(0.1)		
 
