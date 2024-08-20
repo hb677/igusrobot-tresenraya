@@ -133,6 +133,7 @@ while True:
 
             #button code from Marcos
             while True:
+                sendNoPrint()
                 boton_push = GPIO.input(boton)
                 if boton_push==0:
                     break
