@@ -98,7 +98,6 @@ def get_computer_move(board_list):
 cam_port = int(input('which camera port are we using?'))
 camera_position = input('what position is the camera in (1-3)?')
 print('initialising camera...')
-cam_port = 1
 cam = cv.VideoCapture(cam_port)
 
 # Initialise robot
