@@ -4,10 +4,11 @@
     <Output Nr="1" Channel="DOut31" State="False" Descr="" />
     <Output Nr="2" Channel="DOut32" State="True" Descr="" />
     <Linear AbortCondition="False" Nr="3" Source="Numerical" vel="250" acc="40" smooth="0" UserFrame="#base" x="281.7" y="324.8" z="163.8" a="117.7" b="0.54" c="-176.34" e1="0" e2="0" e3="0" Descr="" />
-    <Linear AbortCondition="False" Nr="4" Source="Numerical" vel="250" acc="40" smooth="0" UserFrame="#base" x="212.5" y="-35.3" z="33.8" a="117.7" b="0.54" c="-176.34" e1="0" e2="0" e3="0" Descr="" />
-    <Output Nr="5" Channel="DOut31" State="True" Descr="" />
-    <Linear AbortCondition="False" Nr="6" Source="Numerical" vel="100" acc="40" smooth="0" UserFrame="#base" x="212.3" y="-35.1" z="76.1" a="117.36" b="0.55" c="-176.34" e1="0" e2="0" e3="0" Descr="" />
-    <Linear AbortCondition="False" Nr="7" Source="Numerical" vel="250" acc="40" smooth="0" UserFrame="#base" x="183.6" y="0.1" z="253" a="69.46" b="1.05" c="-176.93" e1="0" e2="0" e3="0" Descr="" />
-    <Output Nr="8" Channel="DOut31" State="False" Descr="" />
-    <Output Nr="9" Channel="DOut32" State="False" Descr="" />
+    <Linear AbortCondition="False" Nr="4" Source="Numerical" vel="250" acc="40" smooth="0" UserFrame="#base" x="221.3" y="-30.8" z="169.6" a="69.46" b="1.05" c="-176.93" e1="0" e2="0" e3="0" Descr="" />
+    <Linear AbortCondition="False" Nr="5" Source="Numerical" vel="100" acc="40" smooth="0" UserFrame="#base" x="221.3" y="-30.8" z="57.9" a="69.46" b="1.05" c="-176.93" e1="0" e2="0" e3="0" Descr="" />
+    <Output Nr="6" Channel="DOut31" State="True" Descr="" />
+    <Linear AbortCondition="False" Nr="7" Source="Numerical" vel="100" acc="40" smooth="0" UserFrame="#base" x="221.3" y="-30.8" z="126.2" a="69.46" b="1.05" c="-176.93" e1="0" e2="0" e3="0" Descr="" />
+    <Linear AbortCondition="False" Nr="8" Source="Numerical" vel="250" acc="40" smooth="0" UserFrame="#base" x="183.6" y="0.1" z="253" a="69.46" b="1.05" c="-176.93" e1="0" e2="0" e3="0" Descr="" />
+    <Output Nr="9" Channel="DOut31" State="False" Descr="" />
+    <Output Nr="10" Channel="DOut32" State="False" Descr="" />
 </Program>
