@@ -87,7 +87,7 @@ def get_computer_move(board_list):
         #space must be empty to be able to make a move there
         if board_list[i] == ' ':
             possible_moves.append(i)
-    #choose a random move from possible corners
+    #choose a random move from possible sides
     if len(possible_moves) != 0:
         return random.choice(possible_moves)
     
