@@ -131,6 +131,10 @@ while True:
             
             if is_winner(the_board, 'x'):
                 print('player won')
+                time.sleep(1.0)
+                sendMessageToRobot('LoadProgram LOST.xml')
+                time.sleep(0.3)
+                sendMessageToRobot('StartProgram')
                 game_is_playing = False
 
             else:
@@ -148,6 +152,10 @@ while True:
 
                     if is_winner(the_board, 'o'):
                         print('computer won')
+                        time.sleep(6.0)
+                        sendMessageToRobot('LoadProgram WIN.xml')
+                        time.sleep(0.3)
+                        sendMessageToRobot('StartProgram')
                         game_is_playing = False
                     
                     else:
