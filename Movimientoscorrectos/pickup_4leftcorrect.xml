@@ -4,7 +4,7 @@
     <Output Nr="1" Channel="DOut32" State="False" Descr="" />
     <Linear AbortCondition="False" Nr="2" Source="Numerical" vel="250" acc="80" smooth="0" UserFrame="#base" x="183.6" y="0.1" z="253" a="69.46" b="1.05" c="-176.93" e1="0" e2="0" e3="0" Descr="" />
     <Linear AbortCondition="False" Nr="3" Source="Numerical" vel="250" acc="40" smooth="0" UserFrame="#base" x="281.7" y="324.8" z="163.8" a="117.7" b="0.54" c="-176.34" e1="0" e2="0" e3="0" Descr="" />
-    <Linear AbortCondition="False" Nr="4" Source="Numerical" vel="250" acc="80" smooth="0" UserFrame="#base" x="281.7" y="324.8" z="76.4" a="117.7" b="0.54" c="-176.34" e1="0" e2="0" e3="0" Descr="" />
+    <Linear AbortCondition="False" Nr="4" Source="Numerical" vel="250" acc="80" smooth="0" UserFrame="#base" x="281.7" y="324.8" z="72.2" a="117.7" b="0.54" c="-176.34" e1="0" e2="0" e3="0" Descr="" />
     <Output Nr="5" Channel="DOut32" State="True" Descr="" />
     <Linear AbortCondition="False" Nr="6" Source="Numerical" vel="250" acc="80" smooth="0" UserFrame="#base" x="281.7" y="324.8" z="163.8" a="117.7" b="0.54" c="-176.34" e1="0" e2="0" e3="0" Descr="" />
 </Program>
